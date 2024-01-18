@@ -8,12 +8,16 @@ If you haven't already done so, install React Native for your development enviro
 ### Getting Started
 
 ```sh
+# install node, watchman, and bun
 brew install node
 brew install watchman
+curl -fsSL https://bun.sh/install | bash
+
+# clone the repo and install dependencies
 git clone https://github.com/Sefaria/Sefaria-iOS/
 cd Sefaria-Mobile                          
-npm install
-npm run setup
+bun install
+bun run setup
 brew install cocoapods
 cd ios
 pod install
@@ -30,8 +34,8 @@ Put `google-services.json` in the `android/app` directory.
 
 To build and start the simulator:
 
-From the root of the repo, run `npx react-native start`.  
-From another terminal, run `npx react-native run-ios` or `npx react-native run-android`
+From the root of the repo, run `bunx react-native start`.  
+From another terminal, run `bunx react-native run-ios` or `bunx react-native run-android`
 
 Alternatively for iOS, you can open `/ios/ReaderApp.xcworkspace` and hit run.
 
