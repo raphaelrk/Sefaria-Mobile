@@ -14,11 +14,11 @@ import {
   DEFAULT_STATE,
   getTheme,
 } from './StateManager';
-import strings from './LocalizedStrings';
-import {ErrorBoundaryFallbackComponent} from "./ErrorBoundaryFallbackComponent";
+import strings from './src/LocalizedStrings';
+import {ErrorBoundaryFallbackComponent} from "./src/ErrorBoundaryFallbackComponent";
 import {ErrorBoundary, useErrorBoundary} from "react-error-boundary";
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import ReaderApp from './ReaderApp';
+import ReaderApp from './src/ReaderApp';
 import '@react-native-firebase/crashlytics';  // to setup up generic crashlytics reports
 
 if (process.env.NODE_ENV !== "production" && false) {
